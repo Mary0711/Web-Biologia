@@ -415,7 +415,11 @@ blockquote::before {
 	color: #999;
 }
 .mg-blog-date {
+<<<<<<< Updated upstream
 	color: #bdbdbd;
+=======
+    color: #333;
+>>>>>>> Stashed changes
 }
 .mg-blog-post.lg .mg-blog-meta i, .mg-blog-post.lg .mg-blog-meta a , .mg-blog-post.lg .mg-blog-meta span {
 	color: #fff;
@@ -609,10 +613,18 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 	background: #fff;
 	color: #999;
 }
+<<<<<<< Updated upstream
 .navigation.pagination .nav-links .page-numbers:hover, .navigation.pagination .nav-links .page-numbers:focus, .navigation.pagination .nav-links .page-numbers.current, .navigation.pagination .nav-links .page-numbers.current:hover,  .navigation.pagination .nav-links .page-numbers.current:focus {
 	border-color: #008080;
 	background: #008080;
 	color: #fff;
+=======
+
+.navigation.pagination .nav-links .page-numbers:hover, .navigation.pagination .nav-links .page-numbers:focus, .navigation.pagination .nav-links .page-numbers.current, .navigation.pagination .nav-links .page-numbers.current:hover, .navigation.pagination .nav-links .page-numbers.current:focus, .single-nav-links a.current, .single-nav-links span.current, .single-nav-links a:hover, .single-nav-links span:hover, .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    border-color: #008080;
+    background: #008080;
+    color: #fff;
+>>>>>>> Stashed changes
 }
 .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
     border-color: #008080;
