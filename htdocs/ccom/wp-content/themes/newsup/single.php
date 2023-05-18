@@ -38,6 +38,7 @@
                 <h1 class="title single"> <a title="<?php the_title_attribute( array('before' => esc_html_e('Permalink to: ','newsup'),'after'  => '') ); ?>">
                   <?php the_title(); ?></a>
                 </h1>
+<<<<<<< Updated upstream
 
                 <div class="media mg-info-author-block"> 
                   <?php $newsup_single_post_admin_details = esc_attr(get_theme_mod('newsup_single_post_admin_details','true'));
@@ -50,13 +51,35 @@
                     <h4 class="media-heading"><span><?php esc_html_e('By','newsup'); ?></span><a href="<?php echo esc_url(get_author_posts_url( get_the_author_meta( 'ID' ) ));?>"><?php the_author(); ?></a></h4>
                     <?php } ?>
                     <?php $newsup_single_post_date = esc_attr(get_theme_mod('newsup_single_post_date','true'));
+=======
+                <?php 
+                $newsup_single_post_admin_details = esc_attr(get_theme_mod('newsup_single_post_admin_details','true'));
+                $newsup_single_post_date = esc_attr(get_theme_mod('newsup_single_post_date','true'));
+                $newsup_single_post_tag = esc_attr(get_theme_mod('newsup_single_post_tag','true'));
+                $tag_list = get_the_tag_list();
+                if(($newsup_single_post_admin_details == true) || ($newsup_single_post_date == true) || (($newsup_single_post_tag == true ) &&($tag_list) ) ) { ?>
+                <div class="media mg-info-author-block"> 
+                  <?php
+                  if($newsup_single_post_admin_details == true){ ?>
+                  <a class="mg-author-pic" href="<?php echo esc_url(get_author_posts_url( get_the_author_meta( 'ID' ) ));?>"> <?php echo get_avatar( get_the_author_meta( 'ID') , 150); ?> </a>
+                  <?php } ?>
+                  <div class="media-body">
+                    <?php 
+                  if($newsup_single_post_admin_details == true){ ?>
+                    <h4 class="media-heading"><span><?php esc_html_e('By','newsup'); ?></span><a href="<?php echo esc_url(get_author_posts_url( get_the_author_meta( 'ID' ) ));?>"><?php the_author(); ?></a></h4>
+                    <?php } 
+>>>>>>> Stashed changes
                     if($newsup_single_post_date == true){ ?>
                     <span class="mg-blog-date"><i class="fas fa-clock"></i> 
                       <?php echo get_the_date('M'); ?> <?php echo get_the_date('j,'); ?> <?php echo get_the_date('Y'); ?></span>
                     <?php }
+<<<<<<< Updated upstream
                     $newsup_single_post_tag = esc_attr(get_theme_mod('newsup_single_post_tag','true'));
                     if($newsup_single_post_tag == true){
                     $tag_list = get_the_tag_list();
+=======
+                    if($newsup_single_post_tag == true){
+>>>>>>> Stashed changes
                     if($tag_list){ ?>
                     <span class="newsup-tags"><i class="fas fa-tag"></i>
                       <a href="<?php the_permalink(); ?>"><?php the_tags('', ', ', ''); ?></a>
@@ -64,6 +87,10 @@
                   <?php } } ?>
                   </div>
                 </div>
+<<<<<<< Updated upstream
+=======
+              <?php }  ?>
+>>>>>>> Stashed changes
               </div>
               <?php
               $single_show_featured_image = esc_attr(get_theme_mod('single_show_featured_image','true'));
